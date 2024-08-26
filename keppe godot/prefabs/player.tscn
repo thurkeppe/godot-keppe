@@ -68,12 +68,13 @@ animations = [{
 script = ExtResource("1_gl6hn")
 
 [node name="Collision" type="CollisionShape2D" parent="."]
-position = Vector2(0, 12)
+position = Vector2(166, 239)
 shape = SubResource("CircleShape2D_fpl7b")
 
 [node name="anim" type="AnimatedSprite2D" parent="."]
+position = Vector2(164, 219)
 sprite_frames = SubResource("SpriteFrames_6kbtb")
-animation = &"move down"
+animation = &"idle"
 autoplay = "idle"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
